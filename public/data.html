@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include your JavaScript file -->
+    <script src="../data.js"></script>
+    <!-- Use a separate script tag to set variables -->
+    <script>
+        const blogData = data[1];
+        const blogHead = blogData.blog_title;
+        const blogBody = blogData.blog_text;
+        // Set the title dynamically
+        document.title = blogHead;
+    </script>
+    <title></title>
+</head>
+<body>
+    <!-- Use JavaScript to insert content -->
+    <h1><script>document.write(blogHead);</script></h1>
+    <p><script>document.write(blogBody);</script></p>
+</body>
+</html>
